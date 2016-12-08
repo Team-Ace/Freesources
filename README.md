@@ -2,7 +2,7 @@ This is a web application developed for an assignment in Advanced Software Engin
 Freesources aims to create database of free items for public use that is contributed to and maintained by users.
 
 **Docker**  
-This project is using docker for a consistent development environment.
+This project is using docker for a consistent development environment. 
 
 The image is hosted on dockerhub at https://hub.docker.com/r/craigrhodes/fs_site/ -- the repository is craigrhodes/fs_site.
 
