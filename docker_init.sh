@@ -6,6 +6,7 @@
 service mysql stop
 rm -f /var/lib/mysql/ib_logfile0
 rm -f /var/lib/mysql/ib_logfile1
+chown -R mysql:mysql /var/lib/mysql
 
 # Start MySQL
 service mysql restart
