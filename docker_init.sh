@@ -2,8 +2,13 @@
 
 # NOTE: THIS FILE IS INTENDED TO BE USED BY THE DOCKER INSTANCE ONLY
 
+# Stop mysql service if running
+service mysql stop
+rm -f /var/lib/mysql/ib_logfile0
+rm -f /var/lib/mysql/ib_logfile1
+
 # Start MySQL
-service mysql start
+service mysql restart
 
 # Create DB
 echo "DROP DATABASE FreeSource;" | mysql -u root --password=$FS_PASS 2>/dev/null
