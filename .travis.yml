@@ -9,4 +9,4 @@ before_install:
   - docker pull craigrhodes/fs_site
 
 script:
-  - docker run craigrhodes/fs_site -e "FS_PORT=8000" -v "$(pwd):/usr/src/fs_site" -p 8000:8000 "$(pwd)/docker_test.sh"
+  - docker run -e "FS_PORT=8000" -v "$(pwd):/usr/src/fs_site" -p 8000:8000 craigrhodes/fs_site ./docker_test.sh
