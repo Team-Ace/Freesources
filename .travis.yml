@@ -8,5 +8,7 @@ services:
 before_install:
   - docker pull craigrhodes/fs_site
 
-script: 
+script:
+- ls
+- pwd
 - docker run craigrhodes/fs_site -e "FS_PORT=8000" -v "$(pwd):/usr/src/fs_site" -p 8000:8000 ./docker_test.sh
